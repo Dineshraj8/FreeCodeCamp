@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header_Area -->
+      <header class="header">
+        <h1 id="title" class="text-center">SURVEY FORM</h1>
+        <p id="discription" class="discription text-center">
+          kindly fill your details properly and this survey is to get to know
+          about students mind.
+        </p>
+      </header>
+
+      <!-- Form_Area -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" class="name-label"> Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="Class" class="class-label"> Class</label>
+          <input
+            type="text"
+            name="Class"
+            id="text"
+            class="form-control"
+            placeholder="Enter Your Class"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" class="age-label">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Enter Your Age"
+          />
+        </div>
+        <div class="form-group">
+            <label for="dob" class="dob-label">Date of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              class="form-control"
+              required
+            />
+          </div>
+        <div class="form-group">
+          <label for="school" class="school-label"> Which School You are?</label>
+          <input
+            type="text"
+            name="school"
+            id="text"
+            class="form-control"
+            placeholder="Enter Your School Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+            <p>Which mode do you want?</p>
+            <select name="mode" id="dropdown" class="form-control" required>
+                <option value="online">Online Mode</option>
+                <option value="offline">Offline Mode</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>If Online Mode, How many hours do you like to spend?</p>
+            <label >
+                <input type="checkbox" name="prefer" value="1hours" class="input-checkbox">1 Hours
+            </label>
+            <label >
+                <input type="checkbox" name="prefer" value="3hours" class="input-checkbox">3 Hours
+            </label>
+            <label >
+                <input type="checkbox" name="prefer" value="5hours" class="input-checkbox">5 Hours
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Why you prefer offline Class?</p>
+            <textarea name="answer" id="answer" class="input-textarea" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+
+      </form>
+    </div>
+  </body>
+</html>
